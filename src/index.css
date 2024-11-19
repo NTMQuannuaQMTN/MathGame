@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FC6296;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  display: flex;
+  color: #FEFFFF;
+  height: 10vh;
+  background-color: #542EB9;
+  border-radius: 0 0 10px 10px;
+}
+
+.header div {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  line-break: auto;
+}
+
+#start {
+  display: flex;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 10vh;
+  margin-top: 5vh;
+  font-size: 7vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #542EB9;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#start:hover {
+  background-color: #CEBCFF;
+}
+
+.gameplay {
+  display: none;
+  width: fit-content;
+  height: fit-content;
+  grid-template-columns: repeat(4, 110px);
+  grid-template-rows: repeat(4, 110px);
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.gameplay div {
+  display: flex;
+  background-color: #FEF3E1;
+  border-radius: 10%;
+  font-size: 450%;
+  justify-content: center;
+  color: #FEA34E;
+}
+
+.gameplay div:hover {
+  background-color: #FBE4C0;
+}
+
+#ovc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+#overlay {
+  position: absolute;
+  flex-direction: column;
+  font-size: 30px;
+  width: 80%;
+  left: 10%;
+  height: 80vh;
+  background-color: #FEFFFF;
+  top: 15vh;
+  border-radius: 10px;
+  gap: 1%;
+}
+
+input {
+  font-size: 30px;
+  width: 80%;
+  border: 1px solid gray;
+}
+
+.content {
+  display: flex;
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: calc(89% - 20px);
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit {
+  border-radius: 10px;
+  width: 14%;
+  text-align: center;
+  background-color: #542EB9;
+  color: #FEFFFF;
+}
+
+.submit:hover {
+  background-color: #3F248B;
+}
+
+#noti {
+  display: flex;
+  font-size: 25px;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #66DE36;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s;
+}
+
+#scoreshow {
+  display: none;
+  flex-direction: column;
+  font-size: 300%;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #FFC361;
+  justify-content: center;
+  gap: 15%;
+  align-items: center;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#retry {
+  display: flex;
+  font-size: 30px;
+  height: 15%;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #542EB9;
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+#retry:hover {
+  background-color: #3F248B;
+}
+
+@media screen and (max-width: 768px) {
+  .gameplay {
+    grid-template-columns: repeat(4, calc((100vw - 50px) / 4));
+    grid-template-rows: repeat(4, calc((100vw - 50px) / 4));
+  }
+
+  .gameplay div {
+    font-size: 15vw;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .submit {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .content {
+    height: calc(85% - 20px);
+  }
+}
