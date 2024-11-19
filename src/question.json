@@ -21,7 +21,7 @@
     {"id": 20, "question": "Một lớp học có 40 học sinh, trong đó có 55% là nữ. Hỏi số học sinh nữ là bao nhiêu?", "ans": "22"},
     {"id": 21, "question": "Một chiếc ô tô đi từ thành phố A đến thành phố B với vận tốc 60 km/h. Nếu quãng đường dài 120 km, thì ô tô mất bao nhiêu giờ để đến B?", "ans": "2"},
     {"id": 22, "question": "Một hình chữ nhật có chiều dài gấp đôi chiều rộng. Tổng chu vi là 48 cm. Tìm chiều rộng của hình chữ nhật.", "ans": "8"},
-    {"id": 23, "question": "Giải phương trình: 4x - 10 = 30", "ans": "10"},
+    {"id": 23, "question": "Giải phương trình: 8x - 10 = 30", "ans": "5"},
     {"id": 24, "question": "Số đo của góc nội tiếp đường tròn chắn cung 80 độ là bao nhiêu độ?", "ans": "40"},
     {"id": 25, "question": "Một cửa hàng bán bút chì với giá 5.000 VNĐ mỗi chiếc. Nếu bạn có tổng cộng 30.000 VNĐ, bạn muốn biết bạn có thể mua tối đa bao nhiêu chiếc bút chì?", "ans": "6"},
     {"id": 26, "question": "Giải phương trình: 8x - 2 = 6", "ans": "1"},
