@@ -114,7 +114,7 @@ input {
   display: flex;
   margin: 10px;
   width: calc(100% - 20px);
-  max-height: calc(89% - 30px);
+  height: calc(89% - 30px);
   padding-bottom: 10px;
   overflow: auto;
   color: black;
@@ -128,6 +128,8 @@ input {
   align-items: center;
   justify-content: center;
   gap: 2%;
+  width: 100%;
+  background-color: white;
 }
 
 input:focus {
@@ -210,6 +212,7 @@ input:focus {
 
   .input {
     flex-direction: column;
+    height: 16%;
   }
 
   .submit {
@@ -221,6 +224,6 @@ input:focus {
   }
 
   .content {
-    max-height: calc(85% - 30px);
+    height: calc(80% - 30px);
   }
 }
