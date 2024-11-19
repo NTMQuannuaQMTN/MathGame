@@ -114,10 +114,12 @@ input {
   display: flex;
   margin: 10px;
   width: calc(100% - 20px);
-  height: calc(89% - 20px);
+  max-height: calc(89% - 30px);
+  padding-bottom: 10px;
+  overflow: auto;
   color: black;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .input {
@@ -219,6 +221,6 @@ input:focus {
   }
 
   .content {
-    height: calc(85% - 20px);
+    max-height: calc(85% - 30px);
   }
 }
